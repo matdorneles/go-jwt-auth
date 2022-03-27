@@ -1,11 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const Home = () => {
-  return (
-    <div>
-        Home
-    </div>
-  );
+const Home = (props: {name: string}) => {
+
+  return <div>{props.name ? 'Hi ' + props.name : 'You are not logged'}</div>;
 };
 
 export default Home;
